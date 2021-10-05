@@ -1,0 +1,11 @@
+[Unit]
+Description=Dodogama bot
+After=multi-user.target
+[Service]
+Type=simple
+User=shiguuur
+WorkingDirectory=/home/shiguuur
+Restart=always
+ExecStart=/usr/bin/python3.8 /home/shiguuur/DingoLingo/run.py
+[Install]
+WantedBy=multi-user.target
